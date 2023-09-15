@@ -1,0 +1,106 @@
+body{
+    background-image: url('./images/coupe-du-monde-rugby.jpg')!important;
+    background-size: 100% 100%; /* Cette propriété permet de redimensionner l'image pour qu'elle couvre tout le fond sans se répéter */
+    background-repeat: no-repeat; /* Cette propriété empêche l'image de se répéter */
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+.dessus{
+    margin-top: 40px;
+}
+  /* Styles CSS pour la mise en forme du jeu */
+  #game-container {
+    width: 600px;
+    height: 400px;
+    position: relative;
+    background: green;
+    border: 4px solid black;
+    overflow: hidden;
+}
+
+#player {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.obstacle {
+    width: 40px;
+    height: 40px;
+    /* background-image: url(./images/adv.gif); */
+    /* background-color: red; */
+    position: absolute;
+}
+
+.ui.segment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.tryLine{
+    width: 100%;
+    height: 20px;
+    background-color: white;
+    position: absolute;
+}
+
+
+
+/* Styles pour la fenêtre modale */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999; /* Un z-index élevé pour s'assurer que le modal est au-dessus de tout le reste */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7); /* Fond gris semi-transparent */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Styles pour l'arrière-plan gris */
+.page-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Fond gris semi-transparent */
+    z-index: 998; /* Z-index légèrement inférieur au modal pour qu'il soit cliquable */
+}
+
+
+#bouton{
+    margin: 5px;
+}
