@@ -94,13 +94,13 @@ if (!empty($_POST['submit'])) {
 							<label for="">J’accepte l’usage de mes coordonnées pour l’envoi de courriers électroniques promotionnels</label>
 							<input  type="checkbox" name="acceptation">
 							</div>
-							<input id="bouton" type="submit" name="submit" value="Envoyer" >
+							<input class="positive ui button" id="bouton" type="submit" name="submit" value="Envoyer" >
 							<!-- <button id="bouton" type="submit" name="submit">Envoyer</button> -->
 						</form>
 					</div>
 				</div>
 				<h1>Va marquer un essai !</h1>
-				<div id="game-container" class="ui raised segment center aligned">
+				<div id="game-container" class="ui raised segment center aligned dessus">
 					<!-- Ajout du bouton de démarrage -->
 
 					<div id="player"><img id="player" src="./asset/images/joueur.gif" alt="Joueur"></div>
